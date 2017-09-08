@@ -71,7 +71,7 @@ div.over{
   justify-content: space-around;
   align-items: center;
 }
-div.titelover {
+h1.titelover {
   width: 375px;
   color: green;
 }
@@ -91,7 +91,7 @@ div.werkervaring{
     justify-content: space-around;
     align-items: center;
 }
-div.titelwerk{
+h1.titelwerk{
   width: 375px;
 }
 div.inhoudwerk{
@@ -106,7 +106,7 @@ div.opleidingen{
   justify-content: space-around;
   align-items: center;
 }
-div.titelopl{
+h1.titelopl{
   width: 375px;
   color: green;
 }
@@ -118,5 +118,10 @@ footer{
   background-color: orange;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-align: center; 
+  text-align: center;
+}
+
+#linkedin{
+  width: 50px;
+  height: 50px;
 }
