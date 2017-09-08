@@ -97,6 +97,10 @@ h1.titelwerk{
 div.inhoudwerk{
   width: 440px;
 }
+#fotoswerk{
+  height: 55px;
+  float: right;
+}
 
 /*opleidingen*/
 div.opleidingen{
