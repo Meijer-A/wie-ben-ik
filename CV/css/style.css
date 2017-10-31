@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box
+}
+/* Slideshow container */
+
+.slideshow-container {
+    margin-top: 800px;
+    max-width: 770px;
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+}
+.prev {
+    left: -80px;
+}
+/* Position the "next button" to the right */
+.next {
+    right: -80px;
+}
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    color: #f2f2f2;
+    font-size: 25px;
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    text-align: center;
+}
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* The dots/bullets/indicators */
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border: 1px solid white;
+    /*background-color: #bbb;*/
+
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+    background-color: white;
+}
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+/*
+@keyframes fadein {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  10% {
+
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+      opacity: 1;
+  }
+}
+@keyframes fadein2 {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+      opacity: 1;
+  }
+}
+@keyframes fadein3 {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+      opacity: 1;
+  }
+}*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background: url(background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+/*header*/
+
+header {
+    animation: fadein 5s;
+    margin: 20px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+/*nav*/
+
+nav {
+    z-index: 2
+}
+.currentpage {
+    border-bottom: 2px solid white;
+    font-size: 17px;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+}
+ul li {
+    padding-left: 15px;
+}
+ul li a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+/*text*/
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    /*color: #888 ;*/
+}
+/*index*/
+
+section.index {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2.index {
+    animation: fadein2 5s;
+    color: white;
+    font-size: 35px;
+}
+h3.index {
+    animation: fadein3 5s;
+    color: white;
+    font-size: 28px;
+}
+.fotoindex {
+    height: 50px;
+    margin-top: 15px;
+}
+.fotoplacement {
+    animation: fadein3 5s;
+    width: 240px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fotoplacement i:hover {
+  size: 120%;
+}
+/*overmij*/
+
+
+/*opleiding*/
+
+h2 {
+    animation: fadein2 5s;
+    z-index: 0;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+main {
+    margin z-index: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+}
+.mainovermij {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mainopl {
+  margin-top: 100vh;
+}
+section.box {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.box article.textbox {
+    margin: 15px 10px;
+    animation: fadein3 5s;
+    height: 95px;
+    width: 475px;
+    padding: 16px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(100, 100, 100, 0.3);
+}
+/*beroep*/
+
+@media screen and (max-width: 1070px) and (min-width: 600px) {
+    h2 {
+        margin-bottom: 39.5px;
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        min-width: 280px;
+    }
+    h2 {
+        margin-bottom: 39.5px;
+    }
+    .box article {
+        width: 84.5%;
+    }
+}
